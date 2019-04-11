@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pico y Placa</title>
+    <link rel="stylesheet"  href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+<body>
+	<div class="content">
+        <div class="row justify-content-md-center">
+            <h2>Simulador Pico y Placa</h2>
+        </div>
+        <br>
+        <div class="row justify-content-md-center">
+        <div class="alert alert-secondary" role="alert">
+            De 07h00 a 09h30 y De 16h00 a 19h30
+            <hr>
+            Lunes:1y2 Martes:3y4 Miercoles:5y6 Jueves:7y8 Viernes:9y0
+        </div>
+	    </div>
+        <div class="row justify-content-md-center">
+        <div class="col-sm">
+        </div>
+        <div class="col-md">    
+            <div class="form-group">
+                <label class="row justify-content-md-center" for="placa">Placa</label>
+                <input type="text" class="form-control" maxlength="7"  id="placa" name="placa" autofocus="autofocus" placeholder="Ejemplo: PBX1234" required>
+                <small id="" class="text-muted">Ingrese letras de placa en mayúsculas</small>
+            </div>
+            <div class="form-group">
+                <label class="row justify-content-md-center" for="fecha">Fecha</label>
+                <input type="date" class="form-control" name="fecha" id="fecha" required onchange="diaSemana();">
+            </div>
+            <div class="form-group">
+                <label class="row justify-content-md-center" for="hora">Hora</label>
+                <input type="time"  class="form-control" id="hora" name="hora" autocomplete="on" required="required">
+                <small id="" class="text-muted">Use formato de 24 horas. Ejemplo 16:00</small>
+            </div>
+            <div class="buton">    
+                    <input class="btn btn-outline-secondary btn-lg btn-block" type="submit"  id="buttonsave" value="Guardar Datos" onclick="active()">
+            </div>
+            <br>
+            <div class="buton">    
+                <input class="btn btn-outline-success btn-lg btn-block" type="submit" disabled id="button" value="Consultar" onclick="verificar()">
+            </div>   
+            </div>
+        <div class="col-sm">  
+        </div> 
+        </div> 
+     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
