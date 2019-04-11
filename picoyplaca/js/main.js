@@ -98,13 +98,6 @@ function resultado(){
   }
 }
 
-/*function verbtn() {
-  if(document.getElementById("placa").value==="" && document.getElementById("fecha").value==="" && document.getElementById("hora").value==="") { 
-           document.getElementById('button').disabled = true;
-       } else { 
-           document.getElementById('button').disabled = false;
-       }
-}*/
 /*Funcion para limpiar campos*/
 function limpiar(){
   document.getElementById("placa").value="";
