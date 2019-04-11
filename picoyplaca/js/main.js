@@ -18,7 +18,6 @@ $("#buttonsave").click(function() {
   var p = document.getElementById("placa").value;
   var patron = /^[A-Z]{3}[0-9]{4}$/;
   if(patron.test(p)){
-    alert("Los datos son correctos, presione Consultar");
     return true;
   }else{
     alert("Verificar placa");
